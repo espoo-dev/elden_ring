@@ -78,50 +78,68 @@
       "steps": [
         {
           "id": 1,
-          "title": "Visit Fort Haight",
-          "description": "<p>Elden Ring Map: Fort Haight location. Fort Haight is a small fort located in East Limgrave. Here you'll find <a href='https://eldenring.wiki.fextralife.com/Kenneth+Haight' class='wiki_link' target='_blank' rel='noopener noreferrer'>Kenneth Haight</a>, an NPC who will give you a quest to reclaim his fort. The fort contains several enemies and a <a href='https://eldenring.wiki.fextralife.com/Golden+Seed' class='wiki_link' target='_blank' rel='noopener noreferrer'>Golden Seed</a> at the top.</p>",
+          "title": "Starting Point and Initial Exploration",
+          "description": "<p><a class=\"wiki_link\" title=\"Elden Ring Interactive Map?id=775&amp;lat=-185.07031&amp;lng=116.60938&amp;code=mapA\" href=\"https://eldenring.wiki.fextralife.com/Interactive+Map?id=775&amp;lat=-185.07031&amp;lng=116.60938&amp;code=mapA\" target=\"_blank\" rel=\"noopener noreferrer\">Elden Ring Map: East Limgrave Starting Point</a>. East Limgrave doesn't have a lot of objectives, but the Rune Bears in the area are more than a challenge, so you should avoid them at all costs. Your plan for this area should be to loot and leave, as it's likely that you are underleveled for it.</p>",
           "completed": false
         },
         {
           "id": 2,
-          "title": "Explore Mistwood",
-          "description": "<p>Elden Ring Map: Mistwood location. The Mistwood is a dense forest area in East Limgrave. Here you'll find the <a href='https://eldenring.wiki.fextralife.com/Mistwood+Ruins' class='wiki_link' target='_blank' rel='noopener noreferrer'>Mistwood Ruins</a> and can encounter the <a href='https://eldenring.wiki.fextralife.com/Runebear' class='wiki_link' target='_blank' rel='noopener noreferrer'>Runebear</a> boss. The area also contains the <a href='https://eldenring.wiki.fextralife.com/Mistwood+Catacombs' class='wiki_link' target='_blank' rel='noopener noreferrer'>Mistwood Catacombs</a>.</p>",
+          "title": "Meet Kenneth Haight",
+          "description": "<p>First you will head to some broken structures along the northern cliff of the area (easiest place to start would be at the Artist's Shack grace or follow the road North from the Gatefront Ruins after passing the bridge). A group of demi-humans must be dispatched, then you can talk to <a class=\"wiki_link\" title=\"Elden Ring Kenneth Haight\" href=\"https://eldenring.wiki.fextralife.com/Kenneth+Haight\">Kenneth Haight</a> atop the ruins, and agree to serve him. He asks you to liberate his keep to the south.</p>",
           "completed": false
         },
         {
           "id": 3,
           "title": "Visit Third Church of Marika",
-          "description": "<p>Elden Ring Map: Third Church of Marika location. This church contains a <a href='https://eldenring.wiki.fextralife.com/Sacred+Tear' class='wiki_link' target='_blank' rel='noopener noreferrer'>Sacred Tear</a> and is where you can find the <a href='https://eldenring.wiki.fextralife.com/Flask+of+Wondrous+Physick' class='wiki_link' target='_blank' rel='noopener noreferrer'>Flask of Wondrous Physick</a>. The church is also a good place to rest and level up.</p>",
+          "description": "<p>Continue following the road northeast from here until you reach the <a class=\"wiki_link\" title=\"Elden Ring Third Church of Marika\" href=\"https://eldenring.wiki.fextralife.com/Third+Church+of+Marika\">Third Church of Marika</a>, where you can loot the <a class=\"wiki_link\" title=\"Elden Ring Flask of Wondrous Physick\" href=\"https://eldenring.wiki.fextralife.com/Flask+of+Wondrous+Physick\">Flask of Wondrous Physick</a> and the <a class=\"wiki_link\" title=\"Elden Ring Crimson Crystal Tear\" href=\"https://eldenring.wiki.fextralife.com/Crimson+Crystal+Tear\">Crimson Crystal Tear</a>. This is an important flask for your journey so don't miss it!</p>",
           "completed": false
         },
         {
           "id": 4,
-          "title": "Defeat Flying Dragon Agheel",
-          "description": "<p>Elden Ring Map: Agheel Lake location. <a href='https://eldenring.wiki.fextralife.com/Flying+Dragon+Agheel' class='wiki_link' target='_blank' rel='noopener noreferrer'>Flying Dragon Agheel</a> is an optional boss that can be found in Agheel Lake. Defeating it will reward you with <a href='https://eldenring.wiki.fextralife.com/Dragon+Heart' class='wiki_link' target='_blank' rel='noopener noreferrer'>Dragon Heart</a> and <a href='https://eldenring.wiki.fextralife.com/Dragon+Communion' class='wiki_link' target='_blank' rel='noopener noreferrer'>Dragon Communion</a> items.</p>",
+          "title": "Find Map Fragment and Crystal Tears",
+          "description": "<p>Follow the road south until you find the area's map fragment. Beware of Rune Bears, but just by the map fragment you'll also find an altar with the <a class=\"wiki_link\" title=\"Elden Ring Greenspill Crystal Tear\" href=\"https://eldenring.wiki.fextralife.com/Greenspill+Crystal+Tear\">Greenspill Crystal Tear</a> and <a class=\"wiki_link\" title=\"Elden Ring Spiked Cracked Tear\" href=\"https://eldenring.wiki.fextralife.com/Spiked+Cracked+Tear\">Spiked Cracked Tear</a>. There's also a Teardrop Scarab nearby that drops <a class=\"wiki_link\" title=\"Elden Ring Ash of War: Ground Slam\" href=\"https://eldenring.wiki.fextralife.com/Ash+of+War:+Ground+Slam\">Ash of War: Ground Slam</a>.</p>",
           "completed": false
         },
         {
           "id": 5,
-          "title": "Explore Summonwater Village",
-          "description": "<p>Elden Ring Map: Summonwater Village location. This area contains the <a href='https://eldenring.wiki.fextralife.com/Tibia+Mariner' class='wiki_link' target='_blank' rel='noopener noreferrer'>Tibia Mariner</a> boss and several items. The village is also connected to <a href='https://eldenring.wiki.fextralife.com/D%2C+Hunter+of+the+Dead' class='wiki_link' target='_blank' rel='noopener noreferrer'>D, Hunter of the Dead</a>'s questline.</p>",
+          "title": "Discover Siofra River",
+          "description": "<p>Once you have looted the above, go inside the structure. Take the lift down all the way to the <a class=\"wiki_link\" title=\"Elden Ring Siofra River\" href=\"https://eldenring.wiki.fextralife.com/Siofra+River\">Siofra River</a>, activate the Site of Grace down there, and head back up - you will come here later as it's very above your current level.</p>",
           "completed": false
         },
         {
           "id": 6,
-          "title": "Visit Saintsbridge",
-          "description": "<p>Elden Ring Map: Saintsbridge location. The bridge is guarded by a <a href='https://eldenring.wiki.fextralife.com/Troll' class='wiki_link' target='_blank' rel='noopener noreferrer'>Troll</a> and contains several items. It's also a good place to farm <a href='https://eldenring.wiki.fextralife.com/Runes' class='wiki_link' target='_blank' rel='noopener noreferrer'>Runes</a> early in the game.</p>",
+          "title": "Meet Blaidd in Mistwood",
+          "description": "<p>Nearby is the Mistwood Ruins, there is a howling wolf that you will hear. Once you hear him you can go back to the Church of Elleh location and talk to <a class=\"wiki_link\" title=\"Elden Ring Merchant Kale\" href=\"https://eldenring.wiki.fextralife.com/Merchant+Kale\">Merchant Kalé</a> who will give you a gesture. Do the gesture (<strong>Finger Snap</strong>) to the wolf and he will jump down, and you can talk to <a class=\"wiki_link\" title=\"Elden Ring Blaidd\" href=\"https://eldenring.wiki.fextralife.com/Blaidd\">Blaidd</a> and start his quest.</p>",
           "completed": false
         },
         {
           "id": 7,
-          "title": "Explore Limgrave Tunnels",
-          "description": "<p>Elden Ring Map: Limgrave Tunnels location. These tunnels contain valuable <a href='https://eldenring.wiki.fextralife.com/Smithing+Stone' class='wiki_link' target='_blank' rel='noopener noreferrer'>Smithing Stones</a> and other upgrade materials. The area is also home to the <a href='https://eldenring.wiki.fextralife.com/Stonedigger+Troll' class='wiki_link' target='_blank' rel='noopener noreferrer'>Stonedigger Troll</a> boss.</p>",
+          "title": "Liberate Fort Haight",
+          "description": "<p>Continue south from here, you can take a detour to meet the Nomadic Merchant of the area if you wish. To the very south, you will encounter <a class=\"wiki_link\" title=\"Elden Ring Fort Haight\" href=\"https://eldenring.wiki.fextralife.com/Fort+Haight\">Fort Haight</a>. There's a <a class=\"wiki_link\" title=\"Elden Ring Golden Seed\" href=\"https://eldenring.wiki.fextralife.com/Golden+Seed\">Golden Seed</a> to be picked up before you go in. Then kill all the enemies within and loot the tower on the right side from the entrance to obtain the very important key item: <a class=\"wiki_link\" title=\"Elden Ring Dectus Medallion (Left)\" href=\"https://eldenring.wiki.fextralife.com/Dectus+Medallion+(Left)\">Dectus Medallion (Left)</a>. There's also <a class=\"wiki_link\" title=\"Elden Ring Nomadic Warrior's Cookbook (6)\" href=\"https://eldenring.wiki.fextralife.com/Nomadic+Warrior's+Cookbook+(6)\">Nomadic Warrior's Cookbook (6)</a> and <a class=\"wiki_link\" title=\"Elden Ring Ash of War: Bloody Slash\" href=\"https://eldenring.wiki.fextralife.com/Ash+of+War:+Bloody+Slash\">Ash of War: Bloody Slash</a>.</p>",
           "completed": false
         },
         {
           "id": 8,
-          "title": "Visit Smoldering Church",
-          "description": "<p>Elden Ring Map: Smoldering Church location. This church is where you can find <a href='https://eldenring.wiki.fextralife.com/Hyetta' class='wiki_link' target='_blank' rel='noopener noreferrer'>Hyetta</a> and begin her questline. The area also contains several items and is near the <a href='https://eldenring.wiki.fextralife.com/Frenzied+Flame+Village' class='wiki_link' target='_blank' rel='noopener noreferrer'>Frenzied Flame Village</a>.</p>",
+          "title": "Report to Kenneth Haight",
+          "description": "<p>Now that the fort is free, report back to Kenneth in the northern area. He will reward you with <a class=\"wiki_link\" title=\"Elden Ring Erdsteel Dagger\" href=\"https://eldenring.wiki.fextralife.com/Erdsteel+Dagger\">Erdsteel Dagger</a> and offer you the opportunity to enter into his service, choice is up to you. You'll next find him back at <a class=\"wiki_link\" title=\"Elden Ring Fort Haight\" href=\"https://eldenring.wiki.fextralife.com/Fort+Haight\">Fort Haight</a>, where you fought the knight that dropped the Ash of War.</p>",
+          "completed": false
+        },
+        {
+          "id": 9,
+          "title": "Defeat Tibia Mariner",
+          "description": "<p>Once this is done, head to <a class=\"wiki_link\" title=\"Elden Ring Summonwater\" href=\"https://eldenring.wiki.fextralife.com/Summonwater\">Summonwater</a> (northwest from the Third Church of Marika), where you will face a <a class=\"wiki_link\" title=\"Elden Ring Tibia Mariner\" href=\"https://eldenring.wiki.fextralife.com/Tibia+Mariner\">Tibia Mariner</a> boss. Defeat it to gain your second <a class=\"wiki_link\" title=\"Elden Ring Deathroot\" href=\"https://eldenring.wiki.fextralife.com/Deathroot\">Deathroot</a> and the <a class=\"wiki_link\" title=\"Elden Ring Skeletal Militiaman Ashes\" href=\"https://eldenring.wiki.fextralife.com/Skeletal+Militiaman+Ashes\">Skeletal Militiamen Ashes</a>, which will enable a discussion with <a class=\"wiki_link\" title=\"Elden Ring D, Hunter of the Dead\" href=\"https://eldenring.wiki.fextralife.com/D,+Hunter+of+the+Dead\">D, Hunter of the Dead</a> at the <a class=\"wiki_link\" title=\"Elden Ring Roundtable Hold\" href=\"https://eldenring.wiki.fextralife.com/Roundtable+Hold\">Roundtable Hold</a> (you may also find him instead near the Summonwater Village Outskirts grace west of here if you didn't reach the Hold yet). In a chest in an underground area, you will find the <a class=\"wiki_link\" title=\"Elden Ring Green Turtle Talisman\" href=\"https://eldenring.wiki.fextralife.com/Green+Turtle+Talisman\">Green Turtle Talisman</a>.</p>",
+          "completed": false
+        },
+        {
+          "id": 10,
+          "title": "Visit Roundtable Hold",
+          "description": "<p>Afterwards, go back to the Third Church of Marika. In the back there will be a portal that will take you to your next location. Open the door and rest at the site of grace. Melina will offer to take you to the Roundtable Hold (which again, if you have not already reached yet earlier from resting at enough graces, since activating them alone isn't enough).</p>",
+          "completed": false
+        },
+        {
+          "id": 11,
+          "title": "Optional: Bestial Sanctum",
+          "description": "<p>If you have access to the Roundtable Hold, after that discussion a gateway will be marked on your map that allows you to teleport to the <a class=\"wiki_link\" title=\"Elden Ring Bestial Sanctum\" href=\"https://eldenring.wiki.fextralife.com/Bestial+Sanctum\">Bestial Sanctum</a> in eastern <a class=\"wiki_link\" title=\"Elden Ring Caelid\" href=\"https://eldenring.wiki.fextralife.com/Caelid\">Caelid</a>. You don't need to do this now so don't worry about it if you haven't been to Roundtable Hold!</p>",
           "completed": false
         }
       ]

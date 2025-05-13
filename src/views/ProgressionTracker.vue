@@ -4,28 +4,24 @@
       🗑️
     </button>
 
+    <div class="regions-navigation">
+      <button
+        v-for="region in regions"
+        :key="region.id"
+        @click="switchToRegion(region.id)"
+        class="region-btn"
+        :class="{ active: region.id === currentRegionId }"
+      >
+        {{ region.name }}
+      </button>
+    </div>
+
     <div class="region-info">
       <h2>{{ currentRegion?.name }}</h2>
       <div class="progress-bar">
         <div class="progress" :style="{ width: progress + '%' }"></div>
       </div>
       <p>Progress: {{ Math.round(progress) }}%</p>
-      <div class="region-navigation">
-        <button
-          v-if="previousRegion"
-          @click="switchToPreviousRegion"
-          class="region-nav-btn prev-region-btn"
-        >
-          ← {{ previousRegion.name }}
-        </button>
-        <button
-          v-if="nextRegion"
-          @click="switchToNextRegion"
-          class="region-nav-btn next-region-btn"
-        >
-          {{ nextRegion.name }} →
-        </button>
-      </div>
     </div>
 
     <div class="current-step" v-if="currentStep">
@@ -67,12 +63,15 @@ import { mapState, mapGetters, mapActions, mapMutations } from 'vuex'
 export default {
   name: 'ProgressionTracker',
   computed: {
-    ...mapState(['currentRegionId', 'currentStepId']),
+    ...mapState(['currentRegionId', 'currentStepId', 'regions']),
     ...mapGetters(['currentRegion', 'currentStep', 'nextStep', 'progress', 'nextRegion', 'previousRegion'])
   },
   methods: {
     ...mapActions(['completeStep', 'loadRegions', 'switchToNextRegion', 'switchToPreviousRegion']),
-    ...mapMutations(['setCurrentStepId']),
+    ...mapMutations(['setCurrentStepId', 'setCurrentRegionId']),
+    switchToRegion(regionId) {
+      this.setCurrentRegionId(regionId)
+    },
     async completeCurrentStep() {
       if (this.currentStep && !this.currentStep.completed) {
         try {
@@ -136,6 +135,38 @@ export default {
 .clear-storage-button:active {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.regions-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.region-btn {
+  background-color: #fff;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.region-btn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.region-btn.active {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
 }
 
 .region-info {
