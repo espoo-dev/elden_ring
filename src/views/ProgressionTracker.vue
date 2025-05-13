@@ -10,7 +10,7 @@
 
     <div class="current-step" v-if="currentStep">
       <h3>Current Step: {{ currentStep.title }}</h3>
-      <p>{{ currentStep.description }}</p>
+      <div v-html="currentStep.description"></div>
       <button
         @click="completeCurrentStep"
         :disabled="currentStep.completed"
@@ -20,10 +20,6 @@
       </button>
     </div>
 
-    <div class="next-step" v-if="nextStep">
-      <h4>Next Step:</h4>
-      <p>{{ nextStep.title }}</p>
-    </div>
 
     <div class="steps-list">
       <h3>All Steps</h3>
@@ -174,5 +170,12 @@ export default {
 .step-status {
   color: #4CAF50;
   font-weight: bold;
+}
+
+.step-description {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
 }
 </style>
