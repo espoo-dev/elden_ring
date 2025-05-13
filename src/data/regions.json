@@ -7,73 +7,67 @@
         {
           "id": 1,
           "title": "Buy Essential Gear",
-          "description": "Purchase essential items from the merchant at the Church of Elleh. This includes the Crafting Kit, Torch, and other useful items.",
+          "description": "Elden Ring Map: Limgrave Region starting point. Limgrave has a lot of places to visit, but only a few of them are essential. Right next to the First Step Site of Grace you'll find White Mask Varre. Exhaust his dialogue for some info about the world and to start his quest. Your first step will be to head to Church of Elleh and meet Merchant Kale, one of the Nomadic Merchants of the game. Patrolling between the starting point and the church is a Tree Sentinel boss. He will be extremely difficult at this stage of the game, so it is strongly suggested to avoid him until you unlock your horse and become stronger. Defeating him rewards you with his Golden Halberd. At the church, buy the Crafting Kit Kale offers, a Torch, and the Telescope. Also make note of the nearby upgrade bench. You can do optional cave and catacomb objectives to gain talismans and materials as needed.",
           "completed": false
         },
         {
           "id": 2,
           "title": "Obtain Limgrave West Map Fragment",
-          "description": "Find the map fragment in the western part of Limgrave to reveal the area on your map.",
+          "description": "Head over to Gatefront Ruins and obtain the Limgrave West map fragment for the area. Also pick up the Whetstone Knife so you can use Skills in your weapon and get Ash of War: Storm Stomp from an underground chest.",
           "completed": false
         },
         {
           "id": 3,
           "title": "Visit the First Step Site of Grace",
-          "description": "Activate the First Step Site of Grace and meet Melina to obtain your horse, Torrent.",
+          "description": "Visit 3 sites of grace, or rest in the Gatefront Site of Grace to speak with Melina and unlock Torrent, your mount. After this, teleport to the Church of Elleh Site of Grace to meet Renna and unlock the Spirit Calling Bell and get the Lone Wolf Ashes.",
           "completed": false
         },
         {
           "id": 4,
-          "title": "Defeat the Tree Sentinel",
-          "description": "Optional boss fight. The Tree Sentinel patrols the path to the Church of Elleh.",
+          "title": "Find Boc the Seamster",
+          "description": "South-east from Gatefront Ruins (past east of the telescope on the map), you'll hear a shout belonging to Boc the Seamster. He's been transformed into a small red tree, so hit the small tree once and talk to him to begin his questline (see Side Quests for other quests). This quest will take you to the Coastal Cave (southern portion of the western beach), which also unlocks access to the Church of Dragon Communion (if you continue further in the cave without exiting it via portal). Defeat the demi-humans in the Coastal Cave, then go back to Boc at the entrance to return his Sewing Needle and Tailoring Tools. South-east from Boc's first location, a Night's Cavalry will spawn during night right on the bridge. Defeating him awards the Ash of War: Repeating Thrust.",
           "completed": false
         },
         {
           "id": 5,
-          "title": "Visit the Church of Elleh",
-          "description": "Meet Ranni and obtain the Spirit Calling Bell and Lone Wolf Ashes.",
+          "title": "Visit the Waypoint Ruins",
+          "description": "If you are a mage or intend to learn sorceries, you will want to unlock Sorceress Sellen in Waypoint Ruins - follow the road south from Gatefront Ruins to find it. She's past the Mad Pumpkin Head Boss fight.",
           "completed": false
         },
         {
           "id": 6,
-          "title": "Clear Gatefront Ruins",
-          "description": "Defeat the enemies and obtain the Whetstone Knife and Storm Stomp Ash of War.",
+          "title": "Visit Stormhill",
+          "description": "Head towards Stormhill (past the Gatefront grace leading west) and talk to Roderika to begin her quest and receive the Sitting Sideways gesture, alongside the Spirit Jellyfish Ashes. If you want to further Roderika's quest in its entirety, make sure to retrieve the Chrysalids' Memento in Stormveil Castle later. You will pick up a Golden Seed just before arriving at Stormhill Shack. There's also a Stonesword Key here that you will want to start collecting.",
           "completed": false
         },
         {
           "id": 7,
-          "title": "Defeat the Beastman of Farum Azula",
-          "description": "Optional boss in the Groveside Cave. Drops the Flamedrake Talisman.",
+          "title": "Visit Warmaster's Shack",
+          "description": "Follow the road East from the Stormhill Shack in Stormhill and you'll come to Warmaster's Shack, where you can purchase Ashes of War from Knight Bernahl. At night, Bernahl will be gone, and a Bell Bearing Hunter boss will spawn as you enter the shack. Note that this boss may be extremely challenging at this point in the game. Defeating him awards the Bone Peddler's Bell Bearing. Similar to ashes hunter badges in previous games, Bell Bearings unlock new items in the game's primary shop when given to the Twin Maiden Husks after you arrive at Roundtable Hold. Just south from here in the hills where the trolls are, you can visit at night and be invaded by a Deathbird mini-boss and get the Blue-Feathered Branchsword talisman.",
           "completed": false
         },
         {
           "id": 8,
-          "title": "Visit the Waypoint Ruins",
-          "description": "Find Sellen and begin the Sorceress questline.",
+          "title": "Meet Alexander",
+          "description": "Continue northeast along the road from Warmaster's Shack and turn right as you see a bridge and hear someone shouting. There is a small path to take up the cliff to your right-hand side. You will meet Alexander (Potboy) and can free him to begin his quest and earn the Triumphant Delight gesture and 1x Exalted Flesh. You have to hit him with a heavy attack or several times from behind.",
           "completed": false
         },
         {
           "id": 9,
-          "title": "Clear the Murkwater Cave",
-          "description": "Defeat Patches and obtain the Grovel for Mercy gesture.",
+          "title": "Explore Deathtouched Catacombs",
+          "description": "Before we proceed, there's another dungeon nearby with useful loot, especially if you're going for an assassin type class. Return a bit west, to the barricades you passed through where you just fought the dog and commoners. Leave the barricades and head east along the road towards the bridge again. This time stick to the left of the road. Before the bridge, follow the path next to the cliff and you will find Deathtouched Catacombs. Inside there will be gathering/farm materials, upgrade materials, an Uchigatana, the talisman Assassin's Crimson Dagger and a Deathroot.",
           "completed": false
         },
         {
           "id": 10,
-          "title": "Defeat the Stonedigger Troll",
-          "description": "Optional boss in the Limgrave Tunnels. Drops the Roar Medallion.",
+          "title": "Meet D, Hunter of the Dead",
+          "description": "Further down the road, past the bridge, you can meet D, Hunter of the Dead, and begin his quest (if you already reached the Roundtable Hold before this point, he will not show up since you would have first met him at the hold instead of near past the bridge, but quest progression remains the same).",
           "completed": false
         },
         {
           "id": 11,
-          "title": "Visit the Third Church of Marika",
-          "description": "Find the Flask of Wondrous Physick and Sacred Tear.",
-          "completed": false
-        },
-        {
-          "id": 12,
-          "title": "Defeat the Flying Dragon Agheel",
-          "description": "Optional boss in the Dragon-Burnt Ruins. Drops the Dragon Heart.",
+          "title": "Explore Murkwater Area",
+          "description": "You will now want to return to the lower area of Limgrave, to go up the ravine from Agheel Lake until you find Murkwater Cave that has a special surprise, and then Murkwater Catacombs. You will get invaded here, so be careful! If you wait a bit to defeat the invader, Bloody Finger Hunter Yura will show up to help you defeat him. You can meet him back north of Murkwater Cave afterwards, where you can exhaust his dialogue to start his quest.",
           "completed": false
         }
       ]
