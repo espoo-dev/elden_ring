@@ -27,7 +27,16 @@
 
     <div class="steps-list">
       <h3>All Steps</h3>
-      <div v-for="step in currentRegion?.steps" :key="step.id" class="step-item" :class="{ completed: step.completed }">
+      <div
+        v-for="step in currentRegion?.steps"
+        :key="step.id"
+        class="step-item"
+        :class="{
+          completed: step.completed,
+          'current-step-item': step.id === currentStep?.id
+        }"
+        @click="selectStep(step.id)"
+      >
         <span class="step-number">{{ step.id }}</span>
         <span class="step-title">{{ step.title }}</span>
         <span class="step-status">{{ step.completed ? '✓' : '○' }}</span>
@@ -37,26 +46,28 @@
 </template>
 
 <script>
-import { mapState, mapGetters, mapActions } from 'vuex'
+import { mapState, mapGetters, mapActions, mapMutations } from 'vuex'
 
 export default {
   name: 'ProgressionTracker',
   computed: {
-    ...mapState(['currentRegionId']),
+    ...mapState(['currentRegionId', 'currentStepId']),
     ...mapGetters(['currentRegion', 'currentStep', 'nextStep', 'progress'])
   },
   methods: {
     ...mapActions(['completeStep', 'loadRegions']),
+    ...mapMutations(['setCurrentStepId']),
     async completeCurrentStep() {
       if (this.currentStep && !this.currentStep.completed) {
         try {
           await this.completeStep(this.currentStep.id)
-          // Force a re-render of the component
-          this.$forceUpdate()
         } catch (error) {
           console.error('Error completing step:', error)
         }
       }
+    },
+    selectStep(stepId) {
+      this.setCurrentStepId(stepId)
     }
   },
   created() {
@@ -133,6 +144,7 @@ export default {
   padding: 0.75rem;
   border-bottom: 1px solid #eee;
   transition: background-color 0.2s ease;
+  cursor: pointer;
 }
 
 .step-item:hover {
@@ -141,6 +153,11 @@ export default {
 
 .step-item.completed {
   background-color: #f0f9f0;
+}
+
+.step-item.current-step-item {
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196F3;
 }
 
 .step-number {

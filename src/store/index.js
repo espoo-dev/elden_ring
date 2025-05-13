@@ -4,7 +4,8 @@ import { progressionService } from '../services/progressionService'
 export default createStore({
   state: {
     currentRegionId: 'west-limgrave',
-    regions: []
+    regions: [],
+    currentStepId: 1
   },
   mutations: {
     setRegions(state, regions) {
@@ -13,12 +14,20 @@ export default createStore({
     setCurrentRegionId(state, regionId) {
       state.currentRegionId = regionId
     },
+    setCurrentStepId(state, stepId) {
+      state.currentStepId = stepId
+    },
     completeStep(state, { regionId, stepId }) {
       const region = state.regions.find(r => r.id === regionId)
       if (region) {
         const step = region.steps.find(s => s.id === stepId)
         if (step) {
           step.completed = true
+          // Set the next step as current
+          const nextStep = region.steps.find(s => s.id === stepId + 1)
+          if (nextStep) {
+            state.currentStepId = nextStep.id
+          }
         }
       }
     }
@@ -37,11 +46,14 @@ export default createStore({
       return progressionService.getRegionById(state.currentRegionId)
     },
     currentStep: state => {
-      return progressionService.getCurrentStep(state.currentRegionId)
+      const region = progressionService.getRegionById(state.currentRegionId)
+      if (!region) return null
+      return region.steps.find(step => step.id === state.currentStepId)
     },
     nextStep: state => {
-      const currentStep = progressionService.getCurrentStep(state.currentRegionId)
-      return currentStep ? progressionService.getNextStep(state.currentRegionId, currentStep.id) : null
+      const region = progressionService.getRegionById(state.currentRegionId)
+      if (!region) return null
+      return region.steps.find(step => step.id === state.currentStepId + 1)
     },
     progress: state => {
       return progressionService.getProgress(state.currentRegionId)
