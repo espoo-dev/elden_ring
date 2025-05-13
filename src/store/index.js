@@ -4,6 +4,9 @@ import { progressionService } from '../services/progressionService'
 
 // Load saved region from localStorage
 const loadSavedRegion = () => {
+   // eslint-disable-next-line no-debugger
+  //  debugger
+
   try {
     const savedRegionId = localStorage.getItem('selected-region')
     return savedRegionId || 'west-limgrave'
@@ -13,14 +16,61 @@ const loadSavedRegion = () => {
   }
 }
 
+// Load completed steps from localStorage
+const loadCompletedSteps = () => {
+  try {
+    const savedSteps = localStorage.getItem('completed_steps_by_region')
+    if (!savedSteps) return []
+    const parsed = JSON.parse(savedSteps)
+    return Array.isArray(parsed) ? parsed : []
+  } catch (err) {
+    console.error('Error loading completed steps:', err)
+    return []
+  }
+}
+
+// Save completed steps to localStorage
+const saveCompletedSteps = (completedSteps) => {
+  try {
+    localStorage.setItem('completed_steps_by_region', JSON.stringify(completedSteps))
+  } catch (err) {
+    console.error('Error saving completed steps:', err)
+  }
+}
+
+// Generate step key for localStorage
+const generateStepKey = (regionId, stepId) => {
+  return `${regionId}-${stepId}`
+}
+
+// Check if a step is completed
+const isStepCompleted = (regionId, stepId) => {
+
+  return loadCompletedSteps().includes(generateStepKey(regionId, stepId))
+}
+
+// Initialize regions with completed steps
+const initializeRegions = () => {
+
+  return regionsData.regions.map(region => ({
+    ...region,
+    steps: region.steps.map(step => ({
+      ...step,
+      completed: isStepCompleted(region.id, step.id)
+    }))
+  }))
+}
+
 export default createStore({
   state: {
-    regions: regionsData.regions,
+    regions: initializeRegions(),
     currentRegionId: loadSavedRegion(),
     currentStepId: 1
   },
   getters: {
     currentRegion: state => {
+      // eslint-disable-next-line no-debugger
+      // debugger
       return state.regions.find(region => region.id === state.currentRegionId)
     },
     currentStep: state => {
@@ -84,6 +134,13 @@ export default createStore({
         const step = region.steps.find(step => step.id === stepId)
         if (step) {
           step.completed = true
+          // Save completed step to localStorage
+          const completedSteps = loadCompletedSteps()
+          const stepKey = generateStepKey(region.id, stepId)
+          if (!completedSteps.includes(stepKey)) {
+            completedSteps.push(stepKey)
+            saveCompletedSteps(completedSteps)
+          }
           // Find the next incomplete step
           const currentIndex = region.steps.findIndex(s => s.id === stepId)
           const nextIncompleteStep = region.steps.slice(currentIndex + 1).find(s => !s.completed)
@@ -100,6 +157,8 @@ export default createStore({
         })
       })
       state.currentStepId = 1
+      // Clear completed steps from localStorage
+      saveCompletedSteps([])
     }
   },
   actions: {
@@ -110,7 +169,12 @@ export default createStore({
       commit('resetProgress')
     },
     clearStorage({ commit }) {
-      localStorage.removeItem('selected-region')
+      try {
+        localStorage.removeItem('selected-region')
+        localStorage.removeItem('completed_steps_by_region')
+      } catch (err) {
+        console.error('Error clearing storage:', err)
+      }
       commit('resetProgress')
     },
     loadRegions({ commit }) {
