@@ -49,7 +49,13 @@ export default {
     ...mapActions(['completeStep', 'loadRegions']),
     async completeCurrentStep() {
       if (this.currentStep && !this.currentStep.completed) {
-        await this.completeStep(this.currentStep.id)
+        try {
+          await this.completeStep(this.currentStep.id)
+          // Force a re-render of the component
+          this.$forceUpdate()
+        } catch (error) {
+          console.error('Error completing step:', error)
+        }
       }
     }
   },

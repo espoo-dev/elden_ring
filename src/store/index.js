@@ -12,6 +12,15 @@ export default createStore({
     },
     setCurrentRegionId(state, regionId) {
       state.currentRegionId = regionId
+    },
+    completeStep(state, { regionId, stepId }) {
+      const region = state.regions.find(r => r.id === regionId)
+      if (region) {
+        const step = region.steps.find(s => s.id === stepId)
+        if (step) {
+          step.completed = true
+        }
+      }
     }
   },
   actions: {
@@ -19,8 +28,8 @@ export default createStore({
       const regions = progressionService.getRegions()
       commit('setRegions', regions)
     },
-    completeStep({ state }, stepId) {
-      return progressionService.completeStep(state.currentRegionId, stepId)
+    completeStep({ commit, state }, stepId) {
+      commit('completeStep', { regionId: state.currentRegionId, stepId })
     }
   },
   getters: {
