@@ -22,6 +22,26 @@ const saveCompletedSteps = (completedSteps) => {
   }
 }
 
+// Load current region from localStorage
+const loadCurrentRegion = () => {
+  try {
+    const savedRegion = localStorage.getItem('current_region')
+    return savedRegion || 'west-limgrave' // Default to west-limgrave if no region is saved
+  } catch (err) {
+    console.error('Error loading current region:', err)
+    return 'west-limgrave'
+  }
+}
+
+// Save current region to localStorage
+const saveCurrentRegion = (regionId) => {
+  try {
+    localStorage.setItem('current_region', regionId)
+  } catch (err) {
+    console.error('Error saving current region:', err)
+  }
+}
+
 // Generate step key for localStorage
 const generateStepKey = (regionId, stepId) => {
   return `${regionId}-${stepId}`
@@ -48,6 +68,14 @@ export const progressionService = {
   getRegionById(regionId) {
     const regions = this.getRegions()
     return regions.find(region => region.id === regionId)
+  },
+
+  getCurrentRegion() {
+    return loadCurrentRegion()
+  },
+
+  setCurrentRegion(regionId) {
+    saveCurrentRegion(regionId)
   },
 
   getCurrentStep(regionId) {
@@ -92,5 +120,6 @@ export const progressionService = {
 
   resetProgress() {
     saveCompletedSteps([])
+    saveCurrentRegion('west-limgrave') // Reset to default region
   }
 }
