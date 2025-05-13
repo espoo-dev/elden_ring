@@ -106,6 +106,10 @@ export default createStore({
     resetProgress({ commit }) {
       commit('resetProgress')
     },
+    clearStorage({ commit }) {
+      localStorage.removeItem('elden-ring-progression')
+      commit('resetProgress')
+    },
     loadRegions({ commit }) {
       const regions = progressionService.getRegions()
       commit('setRegions', regions)
