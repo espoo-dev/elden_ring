@@ -13,7 +13,16 @@ const loadState = () => {
         currentStepId: 1
       }
     }
-    return JSON.parse(serializedState)
+    const state = JSON.parse(serializedState)
+    // Find the first incomplete step
+    const region = state.regions.find(r => r.id === state.currentRegionId)
+    if (region) {
+      const firstIncompleteStep = region.steps.find(step => !step.completed)
+      if (firstIncompleteStep) {
+        state.currentStepId = firstIncompleteStep.id
+      }
+    }
+    return state
   } catch (err) {
     console.error('Error loading state from localStorage:', err)
     return {
@@ -48,7 +57,9 @@ export default createStore({
       const region = state.regions.find(region => region.id === state.currentRegionId)
       if (!region) return null
       const currentIndex = region.steps.findIndex(step => step.id === state.currentStepId)
-      return currentIndex < region.steps.length - 1 ? region.steps[currentIndex + 1] : null
+      // Find the next incomplete step
+      const nextIncompleteStep = region.steps.slice(currentIndex + 1).find(step => !step.completed)
+      return nextIncompleteStep || null
     },
     progress: state => {
       const region = state.regions.find(region => region.id === state.currentRegionId)
@@ -68,6 +79,12 @@ export default createStore({
         const step = region.steps.find(step => step.id === stepId)
         if (step) {
           step.completed = true
+          // Find the next incomplete step
+          const currentIndex = region.steps.findIndex(s => s.id === stepId)
+          const nextIncompleteStep = region.steps.slice(currentIndex + 1).find(s => !s.completed)
+          if (nextIncompleteStep) {
+            state.currentStepId = nextIncompleteStep.id
+          }
           saveState(state)
         }
       }
