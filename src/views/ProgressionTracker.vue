@@ -10,6 +10,22 @@
         <div class="progress" :style="{ width: progress + '%' }"></div>
       </div>
       <p>Progress: {{ Math.round(progress) }}%</p>
+      <div class="region-navigation">
+        <button
+          v-if="previousRegion"
+          @click="switchToPreviousRegion"
+          class="region-nav-btn prev-region-btn"
+        >
+          ← {{ previousRegion.name }}
+        </button>
+        <button
+          v-if="nextRegion"
+          @click="switchToNextRegion"
+          class="region-nav-btn next-region-btn"
+        >
+          {{ nextRegion.name }} →
+        </button>
+      </div>
     </div>
 
     <div class="current-step" v-if="currentStep">
@@ -52,10 +68,10 @@ export default {
   name: 'ProgressionTracker',
   computed: {
     ...mapState(['currentRegionId', 'currentStepId']),
-    ...mapGetters(['currentRegion', 'currentStep', 'nextStep', 'progress'])
+    ...mapGetters(['currentRegion', 'currentStep', 'nextStep', 'progress', 'nextRegion', 'previousRegion'])
   },
   methods: {
-    ...mapActions(['completeStep', 'loadRegions']),
+    ...mapActions(['completeStep', 'loadRegions', 'switchToNextRegion', 'switchToPreviousRegion']),
     ...mapMutations(['setCurrentStepId']),
     async completeCurrentStep() {
       if (this.currentStep && !this.currentStep.completed) {
@@ -235,5 +251,48 @@ export default {
 
 .reset-button:hover {
   background-color: #45a049;
+}
+
+.region-navigation {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.region-nav-btn {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.region-nav-btn:hover {
+  background-color: #1976D2;
+  transform: translateY(-1px);
+}
+
+.region-nav-btn:active {
+  background-color: #1565C0;
+  transform: translateY(0);
+}
+
+.prev-region-btn {
+  background-color: #607D8B;
+}
+
+.prev-region-btn:hover {
+  background-color: #455A64;
+}
+
+.prev-region-btn:active {
+  background-color: #37474F;
 }
 </style>

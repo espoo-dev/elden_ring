@@ -71,6 +71,60 @@
           "completed": false
         }
       ]
+    },
+    {
+      "id": "east-limgrave",
+      "name": "East Limgrave",
+      "steps": [
+        {
+          "id": 1,
+          "title": "Visit Fort Haight",
+          "description": "<p>Elden Ring Map: Fort Haight location. Fort Haight is a small fort located in East Limgrave. Here you'll find <a href='https://eldenring.wiki.fextralife.com/Kenneth+Haight' class='wiki_link' target='_blank' rel='noopener noreferrer'>Kenneth Haight</a>, an NPC who will give you a quest to reclaim his fort. The fort contains several enemies and a <a href='https://eldenring.wiki.fextralife.com/Golden+Seed' class='wiki_link' target='_blank' rel='noopener noreferrer'>Golden Seed</a> at the top.</p>",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Explore Mistwood",
+          "description": "<p>Elden Ring Map: Mistwood location. The Mistwood is a dense forest area in East Limgrave. Here you'll find the <a href='https://eldenring.wiki.fextralife.com/Mistwood+Ruins' class='wiki_link' target='_blank' rel='noopener noreferrer'>Mistwood Ruins</a> and can encounter the <a href='https://eldenring.wiki.fextralife.com/Runebear' class='wiki_link' target='_blank' rel='noopener noreferrer'>Runebear</a> boss. The area also contains the <a href='https://eldenring.wiki.fextralife.com/Mistwood+Catacombs' class='wiki_link' target='_blank' rel='noopener noreferrer'>Mistwood Catacombs</a>.</p>",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Visit Third Church of Marika",
+          "description": "<p>Elden Ring Map: Third Church of Marika location. This church contains a <a href='https://eldenring.wiki.fextralife.com/Sacred+Tear' class='wiki_link' target='_blank' rel='noopener noreferrer'>Sacred Tear</a> and is where you can find the <a href='https://eldenring.wiki.fextralife.com/Flask+of+Wondrous+Physick' class='wiki_link' target='_blank' rel='noopener noreferrer'>Flask of Wondrous Physick</a>. The church is also a good place to rest and level up.</p>",
+          "completed": false
+        },
+        {
+          "id": 4,
+          "title": "Defeat Flying Dragon Agheel",
+          "description": "<p>Elden Ring Map: Agheel Lake location. <a href='https://eldenring.wiki.fextralife.com/Flying+Dragon+Agheel' class='wiki_link' target='_blank' rel='noopener noreferrer'>Flying Dragon Agheel</a> is an optional boss that can be found in Agheel Lake. Defeating it will reward you with <a href='https://eldenring.wiki.fextralife.com/Dragon+Heart' class='wiki_link' target='_blank' rel='noopener noreferrer'>Dragon Heart</a> and <a href='https://eldenring.wiki.fextralife.com/Dragon+Communion' class='wiki_link' target='_blank' rel='noopener noreferrer'>Dragon Communion</a> items.</p>",
+          "completed": false
+        },
+        {
+          "id": 5,
+          "title": "Explore Summonwater Village",
+          "description": "<p>Elden Ring Map: Summonwater Village location. This area contains the <a href='https://eldenring.wiki.fextralife.com/Tibia+Mariner' class='wiki_link' target='_blank' rel='noopener noreferrer'>Tibia Mariner</a> boss and several items. The village is also connected to <a href='https://eldenring.wiki.fextralife.com/D%2C+Hunter+of+the+Dead' class='wiki_link' target='_blank' rel='noopener noreferrer'>D, Hunter of the Dead</a>'s questline.</p>",
+          "completed": false
+        },
+        {
+          "id": 6,
+          "title": "Visit Saintsbridge",
+          "description": "<p>Elden Ring Map: Saintsbridge location. The bridge is guarded by a <a href='https://eldenring.wiki.fextralife.com/Troll' class='wiki_link' target='_blank' rel='noopener noreferrer'>Troll</a> and contains several items. It's also a good place to farm <a href='https://eldenring.wiki.fextralife.com/Runes' class='wiki_link' target='_blank' rel='noopener noreferrer'>Runes</a> early in the game.</p>",
+          "completed": false
+        },
+        {
+          "id": 7,
+          "title": "Explore Limgrave Tunnels",
+          "description": "<p>Elden Ring Map: Limgrave Tunnels location. These tunnels contain valuable <a href='https://eldenring.wiki.fextralife.com/Smithing+Stone' class='wiki_link' target='_blank' rel='noopener noreferrer'>Smithing Stones</a> and other upgrade materials. The area is also home to the <a href='https://eldenring.wiki.fextralife.com/Stonedigger+Troll' class='wiki_link' target='_blank' rel='noopener noreferrer'>Stonedigger Troll</a> boss.</p>",
+          "completed": false
+        },
+        {
+          "id": 8,
+          "title": "Visit Smoldering Church",
+          "description": "<p>Elden Ring Map: Smoldering Church location. This church is where you can find <a href='https://eldenring.wiki.fextralife.com/Hyetta' class='wiki_link' target='_blank' rel='noopener noreferrer'>Hyetta</a> and begin her questline. The area also contains several items and is near the <a href='https://eldenring.wiki.fextralife.com/Frenzied+Flame+Village' class='wiki_link' target='_blank' rel='noopener noreferrer'>Frenzied Flame Village</a>.</p>",
+          "completed": false
+        }
+      ]
     }
   ]
 }

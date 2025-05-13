@@ -61,6 +61,16 @@ export default createStore({
       const nextIncompleteStep = region.steps.slice(currentIndex + 1).find(step => !step.completed)
       return nextIncompleteStep || null
     },
+    nextRegion: state => {
+      const currentIndex = state.regions.findIndex(region => region.id === state.currentRegionId)
+      if (currentIndex === -1 || currentIndex === state.regions.length - 1) return null
+      return state.regions[currentIndex + 1]
+    },
+    previousRegion: state => {
+      const currentIndex = state.regions.findIndex(region => region.id === state.currentRegionId)
+      if (currentIndex <= 0) return null
+      return state.regions[currentIndex - 1]
+    },
     progress: state => {
       const region = state.regions.find(region => region.id === state.currentRegionId)
       if (!region) return 0
@@ -69,8 +79,26 @@ export default createStore({
     }
   },
   mutations: {
+    setRegions(state, regions) {
+      state.regions = regions
+      saveState(state)
+    },
     setCurrentStepId(state, stepId) {
       state.currentStepId = stepId
+      saveState(state)
+    },
+    setCurrentRegionId(state, regionId) {
+      state.currentRegionId = regionId
+      // Reset current step to first incomplete step of new region
+      const region = state.regions.find(r => r.id === regionId)
+      if (region) {
+        const firstIncompleteStep = region.steps.find(step => !step.completed)
+        if (firstIncompleteStep) {
+          state.currentStepId = firstIncompleteStep.id
+        } else {
+          state.currentStepId = region.steps[0].id
+        }
+      }
       saveState(state)
     },
     completeStep(state, stepId) {
@@ -113,6 +141,18 @@ export default createStore({
     loadRegions({ commit }) {
       const regions = progressionService.getRegions()
       commit('setRegions', regions)
+    },
+    switchToNextRegion({ commit, getters }) {
+      const nextRegion = getters.nextRegion
+      if (nextRegion) {
+        commit('setCurrentRegionId', nextRegion.id)
+      }
+    },
+    switchToPreviousRegion({ commit, getters }) {
+      const previousRegion = getters.previousRegion
+      if (previousRegion) {
+        commit('setCurrentRegionId', previousRegion.id)
+      }
     }
   }
 })
