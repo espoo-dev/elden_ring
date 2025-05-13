@@ -1,0 +1,82 @@
+{
+  "regions": [
+    {
+      "id": "west-limgrave",
+      "name": "West Limgrave",
+      "steps": [
+        {
+          "id": 1,
+          "title": "Buy Essential Gear",
+          "description": "Purchase essential items from the merchant at the Church of Elleh. This includes the Crafting Kit, Torch, and other useful items.",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Obtain Limgrave West Map Fragment",
+          "description": "Find the map fragment in the western part of Limgrave to reveal the area on your map.",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Visit the First Step Site of Grace",
+          "description": "Activate the First Step Site of Grace and meet Melina to obtain your horse, Torrent.",
+          "completed": false
+        },
+        {
+          "id": 4,
+          "title": "Defeat the Tree Sentinel",
+          "description": "Optional boss fight. The Tree Sentinel patrols the path to the Church of Elleh.",
+          "completed": false
+        },
+        {
+          "id": 5,
+          "title": "Visit the Church of Elleh",
+          "description": "Meet Ranni and obtain the Spirit Calling Bell and Lone Wolf Ashes.",
+          "completed": false
+        },
+        {
+          "id": 6,
+          "title": "Clear Gatefront Ruins",
+          "description": "Defeat the enemies and obtain the Whetstone Knife and Storm Stomp Ash of War.",
+          "completed": false
+        },
+        {
+          "id": 7,
+          "title": "Defeat the Beastman of Farum Azula",
+          "description": "Optional boss in the Groveside Cave. Drops the Flamedrake Talisman.",
+          "completed": false
+        },
+        {
+          "id": 8,
+          "title": "Visit the Waypoint Ruins",
+          "description": "Find Sellen and begin the Sorceress questline.",
+          "completed": false
+        },
+        {
+          "id": 9,
+          "title": "Clear the Murkwater Cave",
+          "description": "Defeat Patches and obtain the Grovel for Mercy gesture.",
+          "completed": false
+        },
+        {
+          "id": 10,
+          "title": "Defeat the Stonedigger Troll",
+          "description": "Optional boss in the Limgrave Tunnels. Drops the Roar Medallion.",
+          "completed": false
+        },
+        {
+          "id": 11,
+          "title": "Visit the Third Church of Marika",
+          "description": "Find the Flask of Wondrous Physick and Sacred Tear.",
+          "completed": false
+        },
+        {
+          "id": 12,
+          "title": "Defeat the Flying Dragon Agheel",
+          "description": "Optional boss in the Dragon-Burnt Ruins. Drops the Dragon Heart.",
+          "completed": false
+        }
+      ]
+    }
+  ]
+}
