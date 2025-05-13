@@ -2,49 +2,23 @@ import { createStore } from 'vuex'
 import regionsData from '@/data/regions.json'
 import { progressionService } from '../services/progressionService'
 
-// Load state from localStorage
-const loadState = () => {
+// Load saved region from localStorage
+const loadSavedRegion = () => {
   try {
-    const serializedState = localStorage.getItem('elden-ring-progression')
-    if (serializedState === null) {
-      return {
-        regions: regionsData.regions,
-        currentRegionId: 'west-limgrave',
-        currentStepId: 1
-      }
-    }
-    const state = JSON.parse(serializedState)
-    // Find the first incomplete step
-    const region = state.regions.find(r => r.id === state.currentRegionId)
-    if (region) {
-      const firstIncompleteStep = region.steps.find(step => !step.completed)
-      if (firstIncompleteStep) {
-        state.currentStepId = firstIncompleteStep.id
-      }
-    }
-    return state
+    const savedRegionId = localStorage.getItem('selected-region')
+    return savedRegionId || 'west-limgrave'
   } catch (err) {
-    console.error('Error loading state from localStorage:', err)
-    return {
-      regions: regionsData.regions,
-      currentRegionId: 'west-limgrave',
-      currentStepId: 1
-    }
-  }
-}
-
-// Save state to localStorage
-const saveState = (state) => {
-  try {
-    const serializedState = JSON.stringify(state)
-    localStorage.setItem('elden-ring-progression', serializedState)
-  } catch (err) {
-    console.error('Error saving state to localStorage:', err)
+    console.error('Error loading saved region:', err)
+    return 'west-limgrave'
   }
 }
 
 export default createStore({
-  state: loadState(),
+  state: {
+    regions: regionsData.regions,
+    currentRegionId: loadSavedRegion(),
+    currentStepId: 1
+  },
   getters: {
     currentRegion: state => {
       return state.regions.find(region => region.id === state.currentRegionId)
@@ -81,14 +55,18 @@ export default createStore({
   mutations: {
     setRegions(state, regions) {
       state.regions = regions
-      saveState(state)
     },
     setCurrentStepId(state, stepId) {
       state.currentStepId = stepId
-      saveState(state)
     },
     setCurrentRegionId(state, regionId) {
       state.currentRegionId = regionId
+      // Save selected region to localStorage
+      try {
+        localStorage.setItem('selected-region', regionId)
+      } catch (err) {
+        console.error('Error saving selected region:', err)
+      }
       // Reset current step to first incomplete step of new region
       const region = state.regions.find(r => r.id === regionId)
       if (region) {
@@ -99,7 +77,6 @@ export default createStore({
           state.currentStepId = region.steps[0].id
         }
       }
-      saveState(state)
     },
     completeStep(state, stepId) {
       const region = state.regions.find(region => region.id === state.currentRegionId)
@@ -113,7 +90,6 @@ export default createStore({
           if (nextIncompleteStep) {
             state.currentStepId = nextIncompleteStep.id
           }
-          saveState(state)
         }
       }
     },
@@ -124,7 +100,6 @@ export default createStore({
         })
       })
       state.currentStepId = 1
-      saveState(state)
     }
   },
   actions: {
@@ -135,7 +110,7 @@ export default createStore({
       commit('resetProgress')
     },
     clearStorage({ commit }) {
-      localStorage.removeItem('elden-ring-progression')
+      localStorage.removeItem('selected-region')
       commit('resetProgress')
     },
     loadRegions({ commit }) {
