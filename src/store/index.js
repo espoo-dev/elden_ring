@@ -73,6 +73,18 @@ const regionModule = {
     setCurrentRegionId(state, regionId) {
       state.currentRegionId = regionId
       storage.setItem('selected-region', regionId)
+
+      // Find the first incomplete step in the new region
+      const region = state.regions.find(r => r.id === regionId)
+      if (region) {
+        const firstIncompleteStep = region.steps.find(step => !step.completed)
+        if (firstIncompleteStep) {
+          state.currentStepId = firstIncompleteStep.id
+        } else {
+          // If all steps are completed, set to the first step
+          state.currentStepId = region.steps[0].id
+        }
+      }
     },
     completeStep(state, { regionId, stepId }) {
       const region = state.regions.find(r => r.id === regionId)
@@ -103,9 +115,22 @@ const regionModule = {
     async loadRegions({ commit }) {
       const regions = await progressionService.getRegions()
       commit('setRegions', regions)
+      // Set current step to first non-completed step
+      this.dispatch('region/setCurrentStepToNextIncomplete')
+    },
+    setCurrentStepToNextIncomplete({ commit, state }) {
+      const currentRegion = state.regions.find(r => r.id === state.currentRegionId)
+      if (currentRegion) {
+        const firstIncompleteStep = currentRegion.steps.find(step => !step.completed)
+        if (firstIncompleteStep) {
+          commit('setCurrentStepId', firstIncompleteStep.id)
+        }
+      }
     },
     completeStep({ commit, state }, stepId) {
       commit('completeStep', { regionId: state.currentRegionId, stepId })
+      // After completing a step, set current step to next incomplete
+      this.dispatch('region/setCurrentStepToNextIncomplete')
     },
     resetProgress({ commit }) {
       commit('resetProgress')
