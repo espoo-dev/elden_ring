@@ -3,6 +3,7 @@
     {
       "id": "west-limgrave",
       "name": "West Limgrave",
+      "suggestedLevel": "1-15",
       "steps": [
         {
           "id": 1,
@@ -75,6 +76,7 @@
     {
       "id": "east-limgrave",
       "name": "East Limgrave",
+      "suggestedLevel": "15-20",
       "steps": [
         {
           "id": 1,

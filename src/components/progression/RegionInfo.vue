@@ -1,10 +1,15 @@
 <template>
   <div class="region-info">
     <h2>{{ region?.name }}</h2>
-    <div class="progress-bar">
-      <div class="progress" :style="{ width: progress + '%' }"></div>
+    <div class="region-details">
+      <div class="progress-bar">
+        <div class="progress" :style="{ width: progress + '%' }"></div>
+      </div>
+      <div class="region-stats">
+        <p>Progress: {{ Math.round(progress) }}%</p>
+        <p class="suggested-level">Suggested Level: {{ region?.suggestedLevel }}</p>
+      </div>
     </div>
-    <p>Progress: {{ Math.round(progress) }}%</p>
   </div>
 </template>
 
@@ -29,6 +34,12 @@ export default {
   margin-bottom: 2rem;
 }
 
+.region-details {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
 .progress-bar {
   background-color: #eee;
   height: 20px;
@@ -41,5 +52,17 @@ export default {
   background-color: #4CAF50;
   height: 100%;
   transition: width 0.3s ease;
+}
+
+.region-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.suggested-level {
+  color: #666;
+  font-weight: 500;
 }
 </style>
