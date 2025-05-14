@@ -1,5 +1,4 @@
 import { createStore } from 'vuex'
-import regionsData from '@/data/regions.json'
 import { progressionService } from '../services/progressionService'
 
 // Local storage utilities

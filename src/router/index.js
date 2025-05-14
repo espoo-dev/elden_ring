@@ -6,6 +6,10 @@ const routes = [
     path: '/',
     name: 'home',
     component: ProgressionTracker
+  },
+  {
+    path: '/home',
+    redirect: '/'
   }
 ]
 
