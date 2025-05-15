@@ -8,12 +8,14 @@
       :class="{ active: region.id === currentRegionId }"
     >
       <span class="region-name">{{ region.name }}</span>
-      <span class="region-progress">{{ Math.round(getRegionProgress(region)) }}%</span>
+      <span class="region-progress">{{ Math.round(getRegionProgress(region.id)) }}%</span>
     </button>
   </div>
 </template>
 
 <script>
+import { useStore } from 'vuex'
+
 export default {
   name: 'RegionsNavigation',
   props: {
@@ -27,10 +29,10 @@ export default {
     }
   },
   emits: ['select-region'],
-  methods: {
-    getRegionProgress(region) {
-      const completedSteps = region.steps.filter(step => step.completed).length
-      return (completedSteps / region.steps.length) * 100
+  setup() {
+    const store = useStore()
+    return {
+      getRegionProgress: (regionId) => store.getters['region/regionProgress'](regionId)
     }
   }
 }

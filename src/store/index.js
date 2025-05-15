@@ -61,6 +61,12 @@ const regionModule = {
       if (!region) return 0
       const completedSteps = region.steps.filter(step => step.completed).length
       return (completedSteps / region.steps.length) * 100
+    },
+    regionProgress: state => regionId => {
+      const region = state.regions.find(region => region.id === regionId)
+      if (!region) return 0
+      const completedSteps = region.steps.filter(step => step.completed).length
+      return (completedSteps / region.steps.length) * 100
     }
   },
   mutations: {
