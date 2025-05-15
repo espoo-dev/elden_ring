@@ -1,13 +1,13 @@
 <template>
   <div class="region-info">
-    <h2>{{ region?.name }}</h2>
     <div class="region-details">
+      <div class="region-header">
+        <span class="progress-text">Progress: {{ Math.round(progress) }}%</span>
+        <h2 class="region-title">{{ region?.name }}</h2>
+        <span class="suggested-level">Suggested Level: {{ region?.suggestedLevel }}</span>
+      </div>
       <div class="progress-bar">
         <div class="progress" :style="{ width: progress + '%' }"></div>
-      </div>
-      <div class="region-stats">
-        <p>Progress: {{ Math.round(progress) }}%</p>
-        <p class="suggested-level">Suggested Level: {{ region?.suggestedLevel }}</p>
       </div>
     </div>
   </div>
@@ -40,11 +40,36 @@ export default {
   border-radius: 8px;
 }
 
+.region-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.region-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.progress-text {
+  color: #4CAF50;
+  font-weight: 500;
+}
+
+.suggested-level {
+  color: #666;
+  font-weight: 500;
+  text-align: right;
+}
+
 .progress-bar {
   background-color: #eee;
   height: 20px;
   border-radius: 10px;
-  margin: 1rem 0;
   overflow: hidden;
 }
 
@@ -52,17 +77,5 @@ export default {
   background-color: #4CAF50;
   height: 100%;
   transition: width 0.3s ease;
-}
-
-.region-stats {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.5rem;
-}
-
-.suggested-level {
-  color: #666;
-  font-weight: 500;
 }
 </style>
