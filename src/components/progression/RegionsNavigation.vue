@@ -7,7 +7,8 @@
       class="region-btn"
       :class="{ active: region.id === currentRegionId }"
     >
-      {{ region.name }}
+      <span class="region-name">{{ region.name }}</span>
+      <span class="region-progress">{{ Math.round(getRegionProgress(region)) }}%</span>
     </button>
   </div>
 </template>
@@ -25,7 +26,13 @@ export default {
       required: true
     }
   },
-  emits: ['select-region']
+  emits: ['select-region'],
+  methods: {
+    getRegionProgress(region) {
+      const completedSteps = region.steps.filter(step => step.completed).length
+      return (completedSteps / region.steps.length) * 100
+    }
+  }
 }
 </script>
 
@@ -49,6 +56,9 @@ export default {
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .region-btn:hover {
@@ -60,5 +70,15 @@ export default {
   background-color: #4CAF50;
   color: white;
   font-weight: bold;
+}
+
+.region-name {
+  font-weight: 500;
+}
+
+.region-progress {
+  font-size: 0.875rem;
+  opacity: 0.8;
+  margin-left: 0.25rem;
 }
 </style>
