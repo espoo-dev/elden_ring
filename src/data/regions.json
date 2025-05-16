@@ -123,7 +123,7 @@
         {
           "id": 8,
           "title": "Report to Kenneth Haight",
-          "description": "<p>Now that the fort is free, report back to Kenneth in the northern area. He will reward you with <a class=\"wiki_link\" title=\"Elden Ring Erdsteel Dagger\" href=\"https://eldenring.wiki.fextralife.com/Erdsteel+Dagger\">Erdsteel Dagger</a> and offer you the opportunity to enter into his service, choice is up to you. You'll next find him back at <a class=\"wiki_link\" title=\"Elden Ring Fort Haight\" href=\"https://eldenring.wiki.fextralife.com/Fort+Haight\">Fort Haight</a>, where you fought the knight that dropped the Ash of War.</p>",
+          "description": "<p>Now that the fort is free, report back to Kenneth in the northern area. He will reward you with <a class=\"wiki_link\" title=\"Erdsteel Dagger\" href=\"https://eldenring.wiki.fextralife.com/Erdsteel+Dagger\">Erdsteel Dagger</a> and offer you the opportunity to enter into his service, choice is up to you. You'll next find him back at <a class=\"wiki_link\" title=\"Elden Ring Fort Haight\" href=\"https://eldenring.wiki.fextralife.com/Fort+Haight\">Fort Haight</a>, where you fought the knight that dropped the Ash of War.</p>",
           "completed": false
         },
         {
@@ -142,6 +142,67 @@
           "id": 11,
           "title": "Optional: Bestial Sanctum",
           "description": "<p>If you have access to the Roundtable Hold, after that discussion a gateway will be marked on your map that allows you to teleport to the <a class=\"wiki_link\" title=\"Elden Ring Bestial Sanctum\" href=\"https://eldenring.wiki.fextralife.com/Bestial+Sanctum\">Bestial Sanctum</a> in eastern <a class=\"wiki_link\" title=\"Elden Ring Caelid\" href=\"https://eldenring.wiki.fextralife.com/Caelid\">Caelid</a>. You don't need to do this now so don't worry about it if you haven't been to Roundtable Hold!</p>",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": "south-limgrave-weeping",
+      "name": "Southern Limgrave & Weeping Peninsula",
+      "suggestedLevel": "20-25",
+      "steps": [
+        {
+          "id": 1,
+          "title": "Meet Yura & Take on Dragon",
+          "description": "<p><a class=\"wiki_link\" title=\"Elden Ring Interactive Map?id=499&amp;lat=-198.859375&amp;lng=106.943373&amp;code=mapA\" href=\"https://eldenring.wiki.fextralife.com/Interactive+Map?id=499&amp;lat=-198.859375&amp;lng=106.943373&amp;code=mapA\" target=\"_blank\" rel=\"noopener noreferrer\">Elden Ring Map: Southern Limgrave Starting Point</a>. You are now ready to explore Southern <a class=\"wiki_link\" title=\"Elden Ring Limgrave\" href=\"https://eldenring.wiki.fextralife.com/Limgrave\" target=\"\">Limgrave</a>. Travel northeast to the underpass (directly west of the Artist's Shack, down at the ravine underneath a ruin) and talk to <a class=\"wiki_link\" title=\"Elden Ring Bloody Finger Hunter Yura\" href=\"https://eldenring.wiki.fextralife.com/Bloody+Finger+Hunter+Yura\" target=\"\">Bloody Finger Hunter Yura</a>, then proceed to Lake Agheel to challenge and defeat the dragon in this area, <a class=\"wiki_link\" title=\"Elden Ring Flying Dragon Agheel\" href=\"https://eldenring.wiki.fextralife.com/Flying+Dragon+Agheel\" target=\"\">Flying Dragon Agheel</a>. You can summon players or use <a class=\"wiki_link\" title=\"Elden Ring Spirits\" href=\"https://eldenring.wiki.fextralife.com/Spirits\">Spirit Ashes</a> to help with the fight. Using Torrent is suggested. The Dragon Heart you obtain can be traded for <a class=\"wiki_link\" title=\"Elden Ring Incantations\" href=\"https://eldenring.wiki.fextralife.com/Incantations\" target=\"\">Incantations</a> at the <a class=\"wiki_link\" title=\"Elden Ring Church of Dragon Communion\" href=\"https://eldenring.wiki.fextralife.com/Church+of+Dragon+Communion\" target=\"\">Church of Dragon Communion</a> accessed by traversing through <a class=\"wiki_link\" title=\"Elden Ring Coastal Cave\" href=\"https://eldenring.wiki.fextralife.com/Coastal+Cave\" target=\"\">Coastal Cave</a>.</p>",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Obtain Sorcery Scroll",
+          "description": "<p>If you are a sorcerer, you will want to obtain the <a class=\"wiki_link\" title=\"Elden Ring Royal House Scroll\" href=\"https://eldenring.wiki.fextralife.com/Royal+House+Scroll\" target=\"\">Royal House Scroll</a>, that you can bring to <a class=\"wiki_link\" title=\"Elden Ring Sorceress Sellen\" href=\"https://eldenring.wiki.fextralife.com/Sorceress+Sellen\">Sorceress Sellen</a> to unlock more inventory at her shop. Head southeast from the Agheel Lake South site of grace, toward the top of a cliff and you'll see a statue of an object that looks like the half piece of a bowl or a circle. Face the other way, to see a Knight. Keep going to a structure to see a man standing watching over the big structure, alongside a dead body. In that body, you will find the Royal House Scroll.</p>",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Talk to Irina",
+          "description": "<p>Proceed south into the <a class=\"wiki_link\" title=\"Elden Ring Weeping Peninsula\" href=\"https://eldenring.wiki.fextralife.com/Weeping+Peninsula\" target=\"\">Weeping Peninsula</a> and you'll meet <a class=\"wiki_link\" title=\"Elden Ring Irina\" href=\"https://eldenring.wiki.fextralife.com/Irina\">Irina</a> by the road. She will ask you to talk to her father at Castle Morne. You will get there later so for now just continue down the road and rest at the Castle Morne Rampart site of grace. A miniboss roams the area at night. This is a <a class=\"wiki_link\" title=\"Elden Ring Night's Cavalry\" href=\"https://eldenring.wiki.fextralife.com/Night's+Cavalry\" target=\"\">Night's Cavalry</a> and defeating him will give you the <a class=\"wiki_link\" title=\"Elden Ring Ash of War: Barricade Shield\" href=\"https://eldenring.wiki.fextralife.com/Ash+of+War:+Barricade+Shield\">Ash of War: Barricade</a>.</p>",
+          "completed": false
+        },
+        {
+          "id": 4,
+          "title": "Defeat Night's Cavalry",
+          "description": "<p>Take the jump spring near the Site of Grace to gain access to a tower. <a class=\"wiki_link\" title=\"Elden Ring Oridys's Rise\" href=\"https://eldenring.wiki.fextralife.com/Oridys's+Rise\">Oridys's Rise</a> is a mage tower and contains an item that increases your memory slots, the <a class=\"wiki_link\" title=\"Elden Ring Memory Stone\" href=\"https://eldenring.wiki.fextralife.com/Memory+Stone\" target=\"\">Memory Stone</a>. There are multiple of these to be found throughout the game, and they are usually in towers such as this one. You have to find and hit 3 turtles to unlock the entrance. See the <a class=\"wiki_link\" title=\"Elden Ring Oridys's Rise\" href=\"https://eldenring.wiki.fextralife.com/Oridys's+Rise\">Oridys's Rise</a> page for details on where they are. After that, head north of the tower to find a site of grace, and a few enemies. Further after that, you'll find a corpse on a chair holding a <a class=\"wiki_link\" title=\"Elden Ring Stonesword Key\" href=\"https://eldenring.wiki.fextralife.com/Stonesword+Key\">Stonesword Key</a>, and a statue which points to the nearby catacombs to complete.</p>",
+          "completed": false
+        },
+        {
+          "id": 5,
+          "title": "Obtain Memory Slot",
+          "description": "<p>Southwest from the Bridge of Sacrifice grace, there is a Forest Lookout Tower which rewards a Hand Ballista. Directly south of here is a grace named South of the Lookout Tower. If you play as a mage, your next stop is <a class=\"wiki_link\" title=\"Elden Ring Demi-Human Forest Ruins\" href=\"https://eldenring.wiki.fextralife.com/Demi-Human+Forest+Ruins\" target=\"\">Demi-Human Forest Ruins</a> (following the path west from this grace), as their leader drops the <a class=\"wiki_link\" title=\"Elden Ring Demi-Human Queen's Staff\" href=\"https://eldenring.wiki.fextralife.com/Demi-Human+Queen's+Staff\" target=\"\">Demi-Human Queen's Staff</a> which is quite good at low levels (you could also fast travel to the <a class=\"wiki_link\" title=\"Elden Ring Sellia Crystal Tunnel\" href=\"https://eldenring.wiki.fextralife.com/Sellia+Crystal+Tunnel\">Sellia Crystal Tunnel</a> grace you found earlier in Caelid, and find the <a class=\"wiki_link\" title=\"Elden Ring Meteorite Staff\" href=\"https://eldenring.wiki.fextralife.com/Meteorite+Staff\">Meteorite Staff</a> in the <a class=\"wiki_link\" title=\"Elden Ring Swamp of Aeonia\" href=\"https://eldenring.wiki.fextralife.com/Swamp+of+Aeonia\">Swamp of Aeonia</a> on a corpse in the <a class=\"wiki_link\" title=\"Elden Ring Street of Sages Ruins\" href=\"https://eldenring.wiki.fextralife.com/Street+of+Sages+Ruins\" target=\"\">Street of Sages Ruins</a>).</p>",
+          "completed": false
+        },
+        {
+          "id": 6,
+          "title": "Get Sacred Tears",
+          "description": "<p>From here you will head North to find a <a class=\"wiki_link\" title=\"Elden Ring Faith-knot Crystal Tear\" href=\"https://eldenring.wiki.fextralife.com/Faith-knot+Crystal+Tear\" target=\"_blank\" rel=\"noopener noreferrer\">Faith-knot Crystal Tear</a> guarded by some hostile plants. Directly west is a church containing a <a class=\"wiki_link\" title=\"Elden Ring Sacred Tear\" href=\"https://eldenring.wiki.fextralife.com/Sacred+Tear\" target=\"_blank\" rel=\"noopener noreferrer\">Sacred Tear</a> for your flask. South from here leads to both the <a class=\"wiki_link\" title=\"Elden Ring Tombsward Catacombs\" href=\"https://eldenring.wiki.fextralife.com/Tombsward+Catacombs\" target=\"_blank\" rel=\"noopener noreferrer\">Tombsward Catacombs</a> and the Minor Erdtree, which contains both the <a class=\"wiki_link\" title=\"Elden Ring Crimsonburst Crystal Tear\" href=\"https://eldenring.wiki.fextralife.com/Crimsonburst+Crystal+Tear\" target=\"\">Crimsonburst Crystal Tear</a> and <a class=\"wiki_link\" title=\"Elden Ring Opaline Bubbletear\" href=\"https://eldenring.wiki.fextralife.com/Opaline+Bubbletear\" target=\"\">Opaline Bubbletear</a> for your flask. Down the plains, you can see a <a class=\"wiki_link\" title=\"Elden Ring Walking Mausoleum\" href=\"https://eldenring.wiki.fextralife.com/Walking+Mausoleum\">Mausoleum</a>: these are used to replicate Remembrances, which are the \"Boss Souls\" of the main bosses of the game.</p>",
+          "completed": false
+        },
+        {
+          "id": 7,
+          "title": "Get Flask Materials from Erdtree",
+          "description": "<p>Several points of interest are also west of the Minor Erdtree, including another church holding another <a class=\"wiki_link\" title=\"Elden Ring Sacred Tear\" href=\"https://eldenring.wiki.fextralife.com/Sacred+Tear\" target=\"_blank\" rel=\"noopener noreferrer\">Sacred Tear</a>, and the Isolated Merchant's Shack, which you can buy a <a class=\"wiki_link\" title=\"Elden Ring Lantern\" href=\"https://eldenring.wiki.fextralife.com/Lantern\" target=\"_blank\" rel=\"noopener noreferrer\">Lantern</a> to avoid needing a torch for dark areas. Note that in the Witchbane Ruins north of the shack, the <a class=\"wiki_link\" title=\"Elden Ring Sorceress Sellen\" href=\"https://eldenring.wiki.fextralife.com/Sorceress+Sellen\" target=\"\">Sorceress Sellen</a> is there, but there is no way to interact with her for now. Keep the location in mind, though, because it will become important in the later stages of her quest.</p>",
+          "completed": false
+        },
+        {
+          "id": 8,
+          "title": "Complete Castle Morne",
+          "description": "<p>It's now time to take on <a class=\"wiki_link\" title=\"Elden Ring Castle Morne\" href=\"https://eldenring.wiki.fextralife.com/Castle+Morne\" target=\"\">Castle Morne</a> south of where Night's Cavalry was. Note a golden seed right hand side on the path towards castle (which also leads to a map fragment of Weeping Peninsula). This is a simple souls-style dungeon, with a lot of verticality. Notable points are to not miss the drop to meet Irina's Father. From Take the lift to the castle proper and from the entrance go straight past a Pumpkin Head and to the right. Take the ladder, defeat nearby enemies and cross a bridge. With the bridge to your back look LEFT for some barrels. Break them to reveal a ladder and drop down below. Follow this path past some enemies and up a tower to meet <a class=\"wiki_link\" title=\"Elden Ring Edgar\" href=\"https://eldenring.wiki.fextralife.com/Edgar\" target=\"\">Edgar</a>. Once you complete the boss of the area, return to Irina's father, and finally back to Irina to finish their quest. You can also go straight back to Irina without speaking to her father, in which case you skip out on some dialogue. <em>(Note that I would advise against completing this quest too soon until your weapon upgrade is at least +8, because you'll obtain a+8 weapon after progressing enough in this questline, which may affect your ability to interact with other players since matchmaking is affected by weapon level)</em>.</p>",
+          "completed": false
+        },
+        {
+          "id": 9,
+          "title": "Blaidd's Quest",
+          "description": "<p>To continue <a class=\"wiki_link\" title=\"Elden Ring Blaidd\" href=\"https://eldenring.wiki.fextralife.com/Blaidd\">Blaidd's</a> quest, head to the <a class=\"wiki_link\" title=\"Elden Ring Forlorn Hound Evergaol\" href=\"https://eldenring.wiki.fextralife.com/Forlorn+Hound+Evergaol\" target=\"\">Forlorn Hound Evergaol</a> and summon Blaidd for the fight against <a class=\"wiki_link\" title=\"Elden Ring Bloodhound Knight Darriwil\" href=\"https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Darriwil\" target=\"\">Bloodhound Knight Darriwil</a>. Back outside he'll reward you with a <a class=\"wiki_link\" title=\"Elden Ring Somber Smithing Stone (2)\" href=\"https://eldenring.wiki.fextralife.com/Somber+Smithing+Stone+(2)\" target=\"\">Somber Smithing Stone (2)</a> for helping him.</p>",
           "completed": false
         }
       ]
